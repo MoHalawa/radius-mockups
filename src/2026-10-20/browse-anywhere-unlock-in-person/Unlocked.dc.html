@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>At the venue, unlocked</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0E6B5A}a:hover{color:#09493D}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #10201D; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; padding: 56px 20px 24px; gap: 14px">
+<div style="display: flex; align-items: center; gap: 10px; background: #DDF0E9; border-radius: 12px; padding: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0A5446" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 2px"><div style="font-weight: 600; color: #0A5446">You're here</div><div style="font-size: 13px; color: #0A5446">Confirmed by the venue device + 6 phones nearby</div></div>
+</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">Board game night</h1>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<button style="height: 44px; border-radius: 12px; border: none; background: #10201D; color: #FFFFFF; font-weight: 600">Room</button>
+<button style="height: 44px; border-radius: 12px; border: 1px solid #C9D2CF; background: #FFFFFF; color: #10201D">Games</button>
+<button style="height: 44px; border-radius: 12px; border: 1px solid #C9D2CF; background: #FFFFFF; color: #10201D">People</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<div style="background: #FFFFFF; border: 1px solid #E1E7E4; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 12px; color: #4B5E58">Host · pinned</div><div style="font-size: 15px">Chess tables by the window are open.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E1E7E4; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 12px; color: #4B5E58">Amber Fox · 2 min</div><div style="font-size: 15px">Anyone for Word Hunt? Table 3.</div></div>
+<div style="background: #FFFFFF; border: 1px solid #E1E7E4; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 4px"><div style="font-size: 12px; color: #4B5E58">Quiet Owl · 5 min</div><div style="font-size: 15px">Cornhole set is out back if you want a round.</div></div>
+</div>
+<div style="font-size: 12px; color: #4B5E58">Messages travel phone to phone and stay at this event. Long-press to report or block.</div>
+<div style="display: flex; gap: 8px">
+<label for="msg" style="position: absolute; left: -9999px">Message</label>
+<input id="msg" placeholder="Say something to the room" style="flex: 1; height: 48px; border-radius: 24px; border: 1px solid #C9D2CF; padding: 0 16px; font-size: 15px; background: #FFFFFF">
+<button aria-label="Send" style="width: 48px; height: 48px; border-radius: 24px; border: none; background: #0E6B5A; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"></path></svg></button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

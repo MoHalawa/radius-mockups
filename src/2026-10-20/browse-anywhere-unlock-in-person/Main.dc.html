@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Discover events</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0E6B5A}a:hover{color:#09493D}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #10201D; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column">
+<div style="padding: 56px 20px 12px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Happening</h1>
+<button aria-label="Your key" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #C9D2CF; background: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10201D" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="14" r="4"></circle><path d="M11 11l9-9M17 5l2 2M15 7l2 2"></path></svg>
+</button>
+</div>
+<div style="display: flex; gap: 8px">
+<button style="height: 36px; padding: 0 14px; border-radius: 18px; border: none; background: #10201D; color: #FFFFFF; font-weight: 600; font-size: 14px">Near me</button>
+<button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #C9D2CF; background: #FFFFFF; color: #10201D; font-size: 14px">Toronto</button>
+<button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #C9D2CF; background: #FFFFFF; color: #10201D; font-size: 14px">This week</button>
+</div>
+</div>
+<div style="margin: 4px 20px 12px; height: 170px; border-radius: 16px; background: #DDE6E2; position: relative; overflow: hidden">
+<svg width="350" height="170" viewBox="0 0 350 170" aria-hidden="true"><path d="M0 120 C80 90 140 140 220 100 S330 60 350 70" stroke="#C3D0CB" stroke-width="10" fill="none"></path><path d="M60 0 L90 170 M250 0 L210 170" stroke="#C3D0CB" stroke-width="6"></path><circle cx="120" cy="80" r="26" fill="#0E6B5A" fill-opacity="0.18"></circle><circle cx="120" cy="80" r="7" fill="#0E6B5A"></circle><circle cx="260" cy="120" r="18" fill="#B4530F" fill-opacity="0.18"></circle><circle cx="260" cy="120" r="6" fill="#B4530F"></circle></svg>
+<div style="position: absolute; left: 12px; bottom: 10px; font-size: 12px; color: #33463F; background: #FFFFFF; padding: 4px 8px; border-radius: 8px">Areas are shown to ~500 m, not exact spots</div>
+</div>
+<div style="padding: 0 20px; display: flex; flex-direction: column; gap: 10px">
+<a href="Event.dc.html" style="text-decoration: none; color: #10201D; background: #FFFFFF; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 6px; border: 1px solid #E1E7E4">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #4B5E58"><span>Tonight · 7:00 pm</span><span>Kensington area</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700">Board game night</div>
+<div style="display: flex; gap: 12px; font-size: 13px; color: #33463F"><span>23 here now</span><span>41 joined</span><span style="color: #0E6B5A; font-weight: 600">Venue device</span></div>
+</a>
+<div style="background: #FFFFFF; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 6px; border: 1px solid #E1E7E4">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #4B5E58"><span>Sat · 10:00 am</span><span>Trinity Bellwoods</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700">Cornhole pickup games</div>
+<div style="display: flex; gap: 12px; font-size: 13px; color: #33463F"><span>12 joined</span><span>Host-run</span></div>
+</div>
+<div style="background: #FFFFFF; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 6px; border: 1px solid #E1E7E4">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #4B5E58"><span>Sun · 2:00 pm</span><span>Private · area hidden</span></div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700">[Private event name]</div>
+<div style="display: flex; gap: 12px; font-size: 13px; color: #33463F"><span>Invite link needed</span></div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
